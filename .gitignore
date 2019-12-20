@@ -1,0 +1,10 @@
+#editor configs
+/.idea/*
+/nbproject/*
+
+# phpunit result cache file
+.phpunit.result.cache
+
+
+/vendor/*
+
