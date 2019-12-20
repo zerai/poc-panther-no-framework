@@ -16,44 +16,30 @@
     <php>
         <ini name="error_reporting" value="-1" />
 
-
         <server name="PANTHER_APP_ENV" value="panther"/>
         <server name="PANTHER_WEB_SERVER_DIR" value="webserver-dir/"/>
+        <server name="PANTHER_CHROME_ARGUMENTS" value="'--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage'"/>
 
-        <!--<server name="PANTHER_EXTERNAL_BASE_URI" value="localhost:8300"/>-->
-        <!--<server name="PANTHER_WEB_SERVER_PORT" value="8300"/>-->
-
-        <!--<server name="PANTHER_NO_HEADLESS" value="1"/>-->
-        <!--<server name="PANTHER_NO_SANDBOX" value="1"/>-->
-
-        <server name="PANTHER_CHROME_ARGUMENTS" value="'--headless', '--no-sandbox', '--disable-gpu', '--disable-dev-shm-usage', '--window-size=1920,1080'"/>
-
-
-
-        <!--<server name="PANTHER_CHROME_ARGUMENTS" value="&#45;&#45;headless &#45;&#45;disable-gpu"/>-->
-        <!--<server name="PANTHER_NO_SANDBOX" value="1"/>-->
-
-        <!--&lt;!&ndash; to change the web server's port (default to 9080) &ndash;&gt;-->
+        <!-- to change the web server's port (default to 9080) -->
         <!--<server name="PANTHER_WEB_SERVER_PORT" value=""/>-->
 
-        <!--&lt;!&ndash; to use a web server router script which is run at the start of each HTTP request &ndash;&gt;-->
+        <!-- to use a web server router script which is run at the start of each HTTP request -->
         <!--<server name="PANTHER_WEB_SERVER_ROUTER" value=""/>-->
 
-        <!--&lt;!&ndash; to disable browser's headless mode (will display the testing window, useful to debug) &ndash;&gt;-->
+        <!-- to disable browser's headless mode (will display the testing window, useful to debug) -->
         <!--<server name="PANTHER_NO_HEADLESS" value="0"/>-->
 
-        <!--&lt;!&ndash;  to disable Chrome's sandboxing (unsafe, but allows to use Panther in containers) &ndash;&gt;-->
+        <!--  to disable Chrome's sandboxing (unsafe, but allows to use Panther in containers) -->
         <!--<server name="PANTHER_NO_SANDBOX" value="0"/>-->
 
-        <!--&lt;!&ndash;  to use another google-chrome binary &ndash;&gt;-->
+        <!--  to use another google-chrome binary -->
         <!--<server name="PANTHER_CHROME_BINARY" value="path/to/other/chrome/binary"/>-->
 
-        <!--&lt;!&ndash;  to use another chromedriver binary, instead of relying on the ones already provided by Panther &ndash;&gt;-->
+        <!--  to use another chromedriver binary, instead of relying on the ones already provided by Panther -->
         <!--<server name="PANTHER_CHROME_DRIVER_BINARY" value="path/to/other/chrome/binary"/>-->
 
-        <!--&lt;!&ndash;  to customize chromedriver arguments. You need to set PANTHER_NO_HEADLESS to fully customize. &ndash;&gt;-->
-        <!--<server name="PANTHER_CHROME_ARGUMENTS" value="-proxy-server=socks://127.0.0.1:9050"/>-->
-
+        <!--  to customize chromedriver arguments. You need to set PANTHER_NO_HEADLESS to fully customize. -->
+        <!--<server name="PANTHER_CHROME_ARGUMENTS" value="'&#45;&#45;proxy-server=socks://127.0.0.1:9050', '&#45;&#45;headless', '&#45;&#45;no-sandbox', '&#45;&#45;disable-gpu', '&#45;&#45;disable-dev-shm-usage', '&#45;&#45;window-size=1920,1080'"/>-->
     </php>
 
    <testsuites>
